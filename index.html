@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Controle + Rodapé</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121214;
+            color: #e1e1e6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #04d361;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #202024;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: #29292e;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 16px;
+            border-bottom: 1px solid #323238;
+        }
+
+        tbody tr:hover {
+            background-color: #29292e;
+            transition: 0.2s;
+        }
+
+        .entrada { color: #04d361; font-weight: bold; }
+        .saida { color: #f75a68; font-weight: bold; }
+
+        footer {
+            background-color: #202024;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #323238;
+            font-size: 0.9rem;
+            color: #8d8d99;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Movimentações Recentes</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Categoria</th>
+                    <th>Data</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Desenvolvimento Web</td>
+                    <td>Receita</td>
+                    <td>19/11/2026</td>
+                    <td class="entrada">+ R$ 1.500,00</td>
+                </tr>
+                <tr>
+                    <td>Servidor Cloud</td>
+                    <td>Infraestrutura</td>
+                    <td>18/11/2026</td>
+                    <td class="saida">- R$ 85,00</td>
+                </tr>
+                <tr>
+                    <td>Consultoria TI</td>
+                    <td>Receita</td>
+                    <td>15/11/2026</td>
+                    <td class="entrada">+ R$ 600,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Desenvolvido na aula de HTML5 & CSS3 | Todos os direitos reservados &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
